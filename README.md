@@ -1,0 +1,48 @@
+<?php
+
+echo "Múltiplos de 3 até 30:\n";
+for ($i = 3; $i <= 30; $i += 3) {
+    echo $i . "\n";
+}
+
+echo "\n";
+
+echo "Digite números (0 para sair):\n";
+do {
+    $input = readline("Digite um número: ");
+    echo "Você digitou: $input\n";
+} while ($input != 0);
+
+echo "\n";
+
+$frutas = ["Maçã", "Banana", "Laranja", "Uva", "Manga"];
+echo "Lista de Frutas:\n";
+foreach ($frutas as $fruta) {
+    echo $fruta . "\n";
+}
+
+echo "\n";
+
+echo "Números de 1 a 100:\n";
+for ($i = 1; $i <= 100; $i++) {
+    echo $i . " ";
+}
+
+echo "\n\n";
+
+$somaPar = 0;
+for ($i = 2; $i <= 100; $i += 2) {
+    $somaPar += $i;
+}
+echo "Soma dos números pares de 1 a 100: $somaPar\n";
+
+echo "\n";
+
+$numero = readline("Digite um número pra ver a tabuada: ");
+echo "Tabuada de $numero:\n";
+for ($i = 1; $i <= 10; $i++) {
+    $resultado = $numero * $i;
+    echo "$numero x $i = $resultado\n";
+}
+
+?>
